@@ -1,0 +1,10 @@
+servers:
+  hosts:
+    home:
+      ansible_host: 192.168.60.4
+    
+    ya_cloud:
+      ansible_host: 51.250.68.110
+      
+      
+         

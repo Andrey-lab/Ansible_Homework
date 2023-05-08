@@ -1,0 +1,7 @@
+---
+- name: "Using RedHat OS"
+  import_tasks: redhat.yaml
+  when: ansible_os_family == 'RedHat'
+- name: "Using Debian OS"
+  import_tasks: debian.yaml
+  when: ansible_os_family == 'Debian'

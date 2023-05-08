@@ -1,0 +1,9 @@
+- name: "Upgrade components"
+  yum:
+    name: '*'
+    exclude: "{{ item }}"
+    state: latest
+    update_cache: yes
+  loop:
+    - python3
+  notify: Reboot host
